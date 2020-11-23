@@ -1,0 +1,241 @@
+#mapid {
+  background: transparent;
+}
+body {
+  background: transparent;
+}
+.navbar {
+  min-height: 50px;
+}
+
+h2 {
+  color: hotpink;
+}
+h6 {
+  color: rgb(252, 32, 142);
+  animation: textanimation2 1s ease-in-out;
+}
+
+p {
+  color: white;
+  font-style: italic;
+  animation: textanimation2 1s ease-in-out;
+}
+@keyframes textanimation2 {
+  0% {
+    transform: scale(0);
+    visibility: hidden;
+  }
+  100% {
+    letter-spacing: 1px;
+    visibility: visible;
+  }
+}
+.logo {
+  animation: textanimation2 1s ease-in;
+  color: rgb(252, 32, 142) !important;
+}
+a {
+  color: rebeccapurple;
+}
+
+a:hover {
+  color: hotpink;
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: scale(0.1);
+  -moz-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  transform: scale(0.1);
+  top: 300px;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal.fade.show .modal-dialog {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform: translate3d(0, -300px, 0);
+  transform: translate3d(0, -300px, 0);
+  opacity: 1;
+}
+
+#modalButton {
+  background-color: rebeccapurple;
+  margin-left: 5px;
+  color: white;
+}
+
+.modal-title {
+  color: white;
+}
+#city {
+  text-align: center;
+}
+
+#icon {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#min_temp {
+  padding-right: 0px;
+}
+#humidity {
+  padding-left: 0px;
+}
+#city {
+  padding-top: 20px;
+}
+.modal-header {
+  padding: 9px;
+  border-bottom: 1px solid #eee;
+  background-color: rgb(252, 32, 142);
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.modal-footer {
+  background-color: transparent;
+
+  padding-top: 0px;
+  padding-bottom: 2.5px;
+
+  padding-right: 15px;
+  border-top: transparent;
+}
+#history {
+  background: transparent;
+  padding-top: 30px;
+}
+
+.close {
+  color: white;
+}
+#modal-background {
+  background: radial-gradient(circle closest-side, #333, black);
+}
+
+#address {
+  color: white;
+}
+#icon {
+  color: white;
+}
+#min_temp {
+  color: white;
+}
+#max_temp {
+  color: white;
+}
+#humidity {
+  color: white;
+}
+#timezone {
+  color: white;
+}
+#wiki {
+  padding-top: 5px;
+}
+#wikipost1 {
+  color: white;
+}
+#wikipost2 {
+  color: white;
+}
+#wikipost3 {
+  color: white;
+}
+.wikiTitle {
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(252, 32, 142);
+}
+.wikiInfo {
+  padding-bottom: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+}
+.modalBody70 {
+  min-height: 70vh;
+
+  max-height: 70vh;
+
+  overflow-y: scroll;
+}
+.myContainer {
+  padding-top: 20px;
+}
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #fff;
+  animation: loader 10s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+ul {
+  position: absolute;
+}
