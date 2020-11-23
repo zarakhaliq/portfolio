@@ -1,0 +1,316 @@
+* {
+  box-sizing: border-box;
+}
+.modal-content {
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+}
+
+.modal-header {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgb(248, 236, 236);
+}
+.modal-footer {
+  background-color: rgb(248, 236, 236);
+}
+.btn {
+  color: grey;
+  background-color: white;
+}
+.btn:hover {
+  background-color: rgb(202, 201, 201);
+  color: grey;
+}
+.modal-img {
+  width: 292;
+  height: 379;
+  border-radius: 45px;
+  margin-left: 250px;
+}
+.modal-img2 {
+  width: 248;
+  height: 414;
+  border-radius: 25px;
+  margin-left: 250px;
+}
+.modal-title {
+  margin: 0 auto;
+  padding-left: 140px;
+}
+.modalBtn {
+  margin: 40px 10px;
+  padding: 10px;
+  color: blue;
+  border: 1px solid grey;
+  border-color: blue;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: white;
+}
+.modalBtn:hover {
+  background-color: rgb(202, 201, 201);
+  color: blue;
+  text-decoration: none;
+}
+h2 {
+  margin: 0px 0px 30px;
+}
+
+#intro {
+  position: relative;
+}
+#about {
+  padding: 110px 0px 70px;
+}
+#experience {
+  padding: 70px 0px;
+}
+#work {
+  padding: 70px 0px;
+}
+
+#contact {
+  padding: 90px 0px;
+}
+.skillsSection {
+  margin: 0 auto;
+}
+.skills-para {
+  margin: 0px auto;
+}
+.otherSkills {
+  list-style-type: none;
+  font-family: "Roboto Slab", serif;
+  padding: 0;
+}
+.aboutPara {
+  margin: 0 auto;
+}
+.contactPara {
+  margin: 0 auto;
+}
+.work-row {
+  margin: 20px 20px 0px 20px;
+}
+.nav-item {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.navbar-custom {
+  background-color: black;
+  color: white;
+  padding: 0px 20px 0px 20px;
+}
+.active {
+  color: red;
+}
+
+.subtitle {
+  margin: 0px 0px 25px;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  color: white;
+  z-index: 10;
+  position: relative;
+}
+.title {
+  color: white;
+  z-index: 10;
+  position: relative;
+}
+a {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+p {
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+}
+.myPic {
+  width: 170;
+  height: 170;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+.img-responsive {
+  width: 70;
+  height: 70;
+  margin: 0px 0px;
+  font-size: 70px;
+  padding: 0px 15px 15px;
+}
+.img-responsivePic {
+  width: 70;
+  height: 70;
+  margin: 0px 15px 15px;
+  color: black;
+}
+.tech-icon {
+  padding: 0px 15px 15px;
+}
+.emailIcon {
+  font-size: 50px;
+  color: black;
+}
+.overlay {
+  position: absolute; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.portfolio-overlay {
+  position: absolute; /* Sit on top of the page content */
+  display: block; /* Hidden by default */
+  width: 450; /* Full width (cover the whole page) */
+  height: 212; /* Full height (cover the whole page) */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  border-radius: 25px;
+}
+.portfolio-img {
+  border-radius: 25px;
+}
+.work-wrapper {
+  position: relative;
+}
+
+.work-info {
+  position: absolute; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 450; /* Full width (cover the whole page) */
+  height: 33.28; /* Full height (cover the whole page) */
+  background-color: rgba(36, 11, 128); /* Black background with opacity */
+  color: white;
+  z-index: 10; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+}
+.links {
+  padding: 85 160;
+}
+#intro h1 {
+  margin: 0px 0px 30px;
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-family: "Lato", sans-serif;
+}
+h1 {
+  line-height: 1.1;
+  position: absolute;
+}
+h2 {
+  font-family: "Lato", sans-serif;
+}
+h4 {
+  font-family: "Roboto Slab", serif;
+  margin: 15px 0px 8px;
+}
+.navbar-brand {
+  margin: 0px 0px 0px 15px;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+.page-scroll {
+  padding: 15px 15px 15px 15px !important;
+  z-index: 10;
+}
+.logo {
+  width: 40;
+  height: 38.4;
+}
+#intro {
+  background: url(images/background2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000;
+  color: #000;
+}
+.intro-content {
+  padding: 340.1px 0px 86px;
+}
+footer {
+  font-family: "Lato", sans-serif;
+  padding: 15px;
+
+  background: rgb(221, 219, 219);
+}
+footer p {
+  font-weight: lighter;
+  font-size: small;
+}
+.social-media {
+  margin-top: 20px;
+}
+.text-center {
+  text-align: center;
+}
+a:hover {
+  color: grey;
+  text-decoration: none;
+}
+.fa-angle-down:hover {
+  text-decoration: none !important;
+  color: grey;
+}
+.fa-angle-down {
+  margin-top: 175px;
+  font-size: 50px;
+  transition: all 0.5s;
+  padding: 10px 14px;
+  position: relative;
+  z-index: 10;
+}
+.work-wrapper {
+  margin: 0 auto;
+  padding: 0px 0px 5px;
+}
+@media screen and (max-width: 600px) {
+  .portfolio-img {
+    width: 225;
+    height: 106;
+    border-radius: 10px;
+  }
+  .portfolio-overlay {
+    position: absolute; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 225; /* Full width (cover the whole page) */
+    height: 106; /* Full height (cover the whole page) */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    border-radius: 10px;
+  }
+
+  .work-info {
+    position: absolute; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 225; /* Full width (cover the whole page) */
+    height: 16.64; /* Full height (cover the whole page) */
+    background-color: rgba(36, 11, 128); /* Black background with opacity */
+    color: white;
+    z-index: 10; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+  }
+  .links {
+    padding: 40 80;
+  }
+  .work-info-title {
+    font-size: 12px;
+  }
+}
