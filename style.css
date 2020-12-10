@@ -78,6 +78,7 @@ h2 {
 
 #contact {
   padding: 90px 0px;
+  background: hotpink;
 }
 .skillsSection {
   margin: 0 auto;
@@ -92,13 +93,13 @@ h2 {
   display: inline block;
 }
 
-.otherSkills div {
+.otherSkills div div {
   float: left;
   padding: 10px;
   border: 1px solid blue;
   margin: 0 10px 15px;
 }
-.otherSkills div:hover {
+.otherSkills div div:hover {
   border: 3px solid blue;
 }
 .skillsEffect {
@@ -109,6 +110,15 @@ h2 {
 }
 .skillsEffect:hover {
   border: 3px solid blue;
+}
+.skillsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  height: 120;
+  width: 140;
 }
 .aboutPara {
   margin: 0 auto;
@@ -153,7 +163,8 @@ a {
 }
 p {
   font-family: "Roboto Slab", serif;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 300;
 }
 .myPic {
   width: 170;
@@ -190,20 +201,19 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
 }
 
 .portfolio-overlay {
-  position: absolute; /* Sit on top of the page content */
-  display: block; /* Hidden by default */
-  width: 450; /* Full width (cover the whole page) */
-  height: 212; /* Full height (cover the whole page) */
+  position: absolute;
+  display: block;
+  width: 450;
+  height: 212;
   background-color: rgba(0, 0, 0, 0.5);
-  /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+  z-index: 2;
+  cursor: pointer;
   border-radius: 25px;
 }
 .portfolio-img {
@@ -214,13 +224,13 @@ p {
 }
 
 .work-info {
-  position: absolute; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 450; /* Full width (cover the whole page) */
-  height: 33.28; /* Full height (cover the whole page) */
-  background-color: rgba(36, 11, 128); /* Black background with opacity */
+  position: absolute;
+  display: none;
+  width: 450;
+  height: 33.28;
+  background-color: rgba(36, 11, 128);
   color: white;
-  z-index: 10; /* Specify a stack order in case you're using a different order for other elements */
+  z-index: 10;
   cursor: pointer;
 }
 .links {
@@ -244,6 +254,9 @@ h4 {
   font-family: "Roboto Slab", serif;
   font-size: 22px;
   margin: 15px 0px 8px;
+}
+h5 {
+  font-family: "Roboto Slab", serif;
 }
 .navbar-brand {
   margin: 0px 0px 0px 15px;
