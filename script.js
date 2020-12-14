@@ -1,9 +1,8 @@
 //Overlay:
 
 $(document).ready(function () {
-  //$(".overlay").hide();
   $(".portfolio-overlay").hide();
-  //  setTimeout(function () {
+
   $(".overlay").fadeIn();
   $(".navbar-custom").css("background", "transparent");
   $(".fa-angle-down").click(function () {
@@ -13,10 +12,7 @@ $(document).ready(function () {
 
 //Smooth scrolling:
 
-//$("#sec-1").addClass("active");
 $("#sec-1").click(function () {
-  // $(".nav").find(".active").removeClass("active");
-  //$("#sec-1").addClass("active");
   $("html, body").animate(
     {
       scrollTop: $("#about").offset().top + 5,
@@ -26,8 +22,6 @@ $("#sec-1").click(function () {
   return false;
 });
 $("#sec-2").click(function () {
-  //$("#sec-1").removeClass("active");
-  //$("#sec-2").addClass("active");
   $("html, body").animate(
     {
       scrollTop: $("#experience").offset().top + 5,
@@ -55,23 +49,11 @@ $("#sec-4").click(function () {
   return false;
 });
 
-//Avtive links:
-//$(".nav .nav-link").on("click", function () {
-//$(".nav").find(".active").removeClass("active");
-//$(this).addClass("active");
-//});
-
-//$("#scroll-bar");
-
 //Changing navbar transition from homepage:
 
 jQuery(function ($) {
   $(window).scroll(function () {
-    //if ($(this).scrollTop() > 800) {
     $(".navbar-custom").css("background", "black");
-    // } else {
-    //  $(".navbar-custom").css("background", "transparent");
-    //}
   });
 });
 
@@ -80,11 +62,10 @@ jQuery(function ($) {
 $(".wk1").hover(
   function () {
     $(".PO1").show();
-    // $(".portfolio-overlay").hide();
+
     $(".1").show();
     $(".portfolio-img").css("z-index", "0");
     $(".work-info").css("z-index", "0");
-    //console.log("mouseover!");
   },
   function () {
     $(".PO1").hide();
@@ -95,11 +76,10 @@ $(".wk1").hover(
 $(".wk2").hover(
   function () {
     $(".PO2").show();
-    // $(".portfolio-overlay").hide();
+
     $(".2").show();
     $(".portfolio-img").css("z-index", "0");
     $(".work-info").css("z-index", "0");
-    //console.log("mouseover!");
   },
   function () {
     $(".PO2").hide();
@@ -117,3 +97,6 @@ $(".skillsEffect").bind(
     $(this).removeClass("animate__animated animate__pulse");
   }
 );
+$(".emailIcon").hover(function () {
+  $(this).addClass("animate__animated animate__bounce");
+});
