@@ -1,5 +1,21 @@
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  color: #000;
+  background-color: #fff;
+  margin: 0px auto;
+  position: relative;
 }
 .description {
   padding: 30px 0px;
@@ -7,6 +23,7 @@
 .modal-content {
   font-family: "Roboto Slab", serif;
   font-size: 15px;
+  border-radius: 0px;
 }
 
 .modal-header {
@@ -40,7 +57,7 @@
 }
 .modal-title {
   margin: 0 auto;
-  padding-left: 140px;
+  text-align: center;
 }
 .modalBtn {
   margin: 40px 10px;
@@ -88,28 +105,38 @@ h2 {
 }
 .otherSkills {
   font-family: "Roboto Slab", serif;
-  padding-left: 80px;
-  padding-top: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
   display: inline block;
 }
 
 .otherSkills div div {
   float: left;
   padding: 10px;
-  border: 1px solid blue;
+  border: 1px solid hotpink;
   margin: 0 10px 15px;
 }
 .otherSkills div div:hover {
-  border: 3px solid blue;
+  border: 3px solid hotpink;
+}
+@media screen and (max-width: 576px) {
+  .otherSkills {
+    padding-left: 0px;
+  }
+  .box {
+    height: 100 !important;
+    width: 120 !important;
+    font-size: 14px;
+  }
 }
 .skillsEffect {
   float: left;
   padding: 10px;
-  border: 1px solid blue;
+  border: 1px solid hotpink;
   margin: 0 10px 15px;
 }
 .skillsEffect:hover {
-  border: 3px solid blue;
+  border: 3px solid hotpink;
 }
 .skillsContainer {
   display: flex;
@@ -129,17 +156,21 @@ h2 {
 .work-row {
   margin: 20px 20px 0px 20px;
 }
-.nav-item {
-  padding-left: 5px;
-  padding-right: 5px;
-}
+
 .navbar-custom {
   background-color: black;
   color: white;
-  padding: 0px 20px 0px 20px;
+  margin-bottom: 0;
+  border-color: transparent;
+  border-bottom: 0;
+  letter-spacing: 1px;
+  background: 0 0;
+  -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
 }
 .active {
-  color: red;
+  color: hotpink;
 }
 
 .subtitle {
@@ -172,21 +203,103 @@ p {
   margin-bottom: 20px;
   border-radius: 50%;
 }
-.img-responsive {
-  width: 70;
-  height: 70;
-  margin: 0px 0px;
+.skillsSection .tech-icon i {
+  margin: 0 auto;
+  width: 70px;
+  height: auto;
   font-size: 70px;
-  padding: 0px 15px 15px;
-}
-.img-responsivePic {
-  width: 70;
-  height: 70;
-  margin: 0px 15px 15px;
   color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.tech-icon {
+.skillsSection .tech-icon img {
+  margin: 0 auto;
+  width: 75px;
+  height: auto;
+  font-size: 75px;
+  color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.skillsSection .tech-icon {
   padding: 0px 15px 15px;
+  height: 120px;
+}
+
+@media screen and (max-width: 360px) {
+  .skillsSection .tech-icon {
+    padding-bottom: 0;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .skillsSection .tech-icon {
+    padding: 0 10px 10px;
+
+    margin: 10px;
+  }
+
+  .sql {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+.skillsSection .tech-icon img:hover {
+  -webkit-filter: drop-shadow(8px 8px 10px hotpink);
+  filter: drop-shadow(8px 8px 10px hotpink);
+}
+.skillsSection .tech-icon i:hover {
+  color: hotpink;
+}
+
+@media screen and (max-width: 450px) {
+  .skillsSection .tech-icon i {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .skillsSection .tech-icon img {
+    width: 55%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 254px) {
+  .skillsSection .tech-icon img {
+    width: 65%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 204px) {
+  .skillsSection .tech-icon img {
+    width: 75%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .skillsSection .tech-icon {
+    margin: 0;
+    padding: 2px;
+    width: 30% !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .skillsSection .tech-icon {
+    margin: 0;
+    padding: 2px;
+    width: 50% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .skillsSection .tech-icon i {
+    font-size: 65px;
+    height: auto;
+  }
 }
 .emailIcon {
   font-size: 50px;
@@ -228,7 +341,7 @@ p {
   display: none;
   width: 450;
   height: 33.28;
-  background-color: rgba(36, 11, 128);
+  background-color: hotpink;
   color: white;
   z-index: 10;
   cursor: pointer;
@@ -258,14 +371,16 @@ h4 {
 h5 {
   font-family: "Roboto Slab", serif;
 }
-.navbar-brand {
-  margin: 0px 0px 0px 15px;
+
+.navbar-custom .navbar-brand .navbar-toggle {
+  padding: 4px 6px;
   font-size: 18px;
-  font-family: "Lato", sans-serif;
+  color: #fff;
   text-transform: uppercase;
+  font-family: "Lato", sans-serif;
 }
 .page-scroll {
-  padding: 15px 15px 15px 15px !important;
+  padding: 0px 15px 0px 15px !important;
   z-index: 10;
 }
 .logo {
@@ -300,16 +415,26 @@ footer p {
 .text-center {
   text-align: center;
 }
+.navbar-custom .navbar-brand:hover {
+  opacity: 0.8;
+}
 a:hover {
-  color: grey;
+  color: #ccc;
+  text-decoration: none;
+}
+.emailIcon:hover {
+  color: red;
   text-decoration: none;
 }
 .fa-angle-down:hover {
   text-decoration: none !important;
   color: grey;
 }
+.fa-angle-down:focus {
+  text-decoration: none !important;
+}
 .fa-angle-down {
-  margin-top: 175px;
+  margin-top: 100px;
   font-size: 50px;
   transition: all 0.5s;
   padding: 10px 14px;
@@ -325,6 +450,7 @@ a:hover {
     width: 225;
     height: 106;
     border-radius: 10px;
+    margin-left: 0;
   }
   .portfolio-overlay {
     position: absolute; /* Sit on top of the page content */
@@ -352,5 +478,91 @@ a:hover {
   }
   .work-info-title {
     font-size: 12px;
+  }
+  .modal-img {
+    width: 292;
+    height: 379;
+    border-radius: 45px;
+    margin-left: 0px;
+  }
+  .modal-img2 {
+    width: 292;
+    height: 379;
+    border-radius: 45px;
+    margin-left: 0px;
+  }
+}
+.fa-bars {
+  color: #fff;
+}
+@media screen and (max-width: 1000px) {
+  .intro-content {
+    padding: 25% 0 5% 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro-content {
+    padding: 30% 0 5% 0;
+  }
+  .navbar-toggler {
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .intro-content {
+    padding: 45% 0 5% 0;
+  }
+  a.fa.fa-angle-down {
+    margin-top: 80px !important;
+  }
+}
+@media screen and (min-width: 1600px) {
+  a.fa.fa-angle-down {
+    position: relative;
+    bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 818px) {
+  .nav > li > a {
+    padding: 15px 10px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-custom {
+    border-bottom: 0;
+    letter-spacing: 1px;
+    background: 0 0;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: #000;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    width: 700px;
+  }
+}
+@media (max-width: 340px) {
+  .modal-body p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 340px) {
+  .modal-description {
+    margin: 0;
   }
 }
