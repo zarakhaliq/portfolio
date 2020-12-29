@@ -53,7 +53,17 @@ body {
   width: 248;
   height: 414;
   border-radius: 25px;
-  margin-left: 250px;
+  margin-left: 0px;
+  justify-content: center;
+  display: flex;
+  align-self: center;
+}
+.modal-img3 {
+  width: 500;
+  height: 308;
+  border-radius: 45px;
+  justify-content: center;
+  display: flex;
 }
 .modal-title {
   margin: 0 auto;
