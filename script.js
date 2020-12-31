@@ -87,6 +87,52 @@ $(".wk2").hover(
     $(".portfolio-overlay").css("z-index", "0");
   }
 );
+
+$(".wk3").hover(
+  function () {
+    $(".PO3").show();
+
+    $(".3").show();
+    $(".portfolio-img").css("z-index", "0");
+    $(".work-info").css("z-index", "0");
+  },
+  function () {
+    $(".PO1").hide();
+    $(".3").hide();
+    $(".portfolio-overlay").css("z-index", "0");
+  }
+);
+
+$(".wk4").hover(
+  function () {
+    $(".PO4").show();
+
+    $(".4").show();
+    $(".portfolio-img").css("z-index", "0");
+    $(".work-info").css("z-index", "0");
+  },
+  function () {
+    $(".PO1").hide();
+    $(".4").hide();
+    $(".portfolio-overlay").css("z-index", "0");
+  }
+);
+
+$(".wk5").hover(
+  function () {
+    $(".PO5").show();
+
+    $(".5").show();
+    $(".portfolio-img").css("z-index", "0");
+    $(".work-info").css("z-index", "0");
+  },
+  function () {
+    $(".PO1").hide();
+    $(".5").hide();
+    $(".portfolio-overlay").css("z-index", "0");
+  }
+);
+
 $(".skillsEffect").hover(function () {
   $(this).addClass("animate__animated animate__pulse");
 });
