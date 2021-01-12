@@ -17,6 +17,19 @@ body {
   margin: 0px auto;
   position: relative;
 }
+@media (max-width: 990px) {
+  .nav-link {
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  .navbar-nav {
+    height: 100vh;
+  }
+}
 .description {
   padding: 30px 0px;
 }
@@ -94,17 +107,17 @@ h2 {
   position: relative;
 }
 #about {
-  padding: 110px 0px 70px;
+  padding: 110px 0px 60px;
 }
 #experience {
-  padding: 90px 0px;
+  padding: 60px 0px 60px;
 }
 #work {
-  padding: 70px 0px 90px;
+  padding: 60px 0px 60px;
 }
 
 #contact {
-  padding: 90px 0px;
+  padding: 60px 0px 10px;
   background: hotpink;
 }
 .skillsSection {
@@ -258,8 +271,8 @@ p {
   }
 }
 .skillsSection .tech-icon img:hover {
-  -webkit-filter: drop-shadow(8px 8px 10px hotpink);
-  filter: drop-shadow(8px 8px 10px hotpink);
+  -webkit-filter: drop-shadow(6px 6px 6px hotpink);
+  filter: drop-shadow(6px 6px 6px hotpink);
 }
 .skillsSection .tech-icon i:hover {
   color: hotpink;
@@ -304,6 +317,15 @@ p {
     padding: 2px;
     width: 50% !important;
   }
+  .modalBtn {
+    margin-bottom: 20px !important;
+    padding: 4px;
+    font-size: 12px;
+    background-color: white;
+  }
+  .modal-description {
+    font-size: 12px !important;
+  }
 }
 @media screen and (max-width: 991px) {
   .skillsSection .tech-icon i {
@@ -319,7 +341,7 @@ p {
   position: absolute; /* Sit on top of the page content */
   display: none; /* Hidden by default */
   width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
+  height: 100vh; /* Full height (cover the whole page) */
   top: 0;
   left: 0;
   right: 0;
@@ -405,10 +427,15 @@ h5 {
   background-repeat: no-repeat;
   background-color: #000;
   color: #000;
+  height: 100vh;
 }
-.intro-content {
-  padding: 340.1px 0px 86px;
+@media screen and (max-width: 1000px) {
+  #intro {
+    background-size: cover;
+    height: 100vh;
+  }
 }
+
 footer {
   font-family: "Lato", sans-serif;
   padding: 15px;
@@ -451,22 +478,36 @@ a:hover {
   position: relative;
   z-index: 10;
 }
+.fa-angle-up:hover {
+  text-decoration: none !important;
+  color: grey;
+}
+.fa-angle-up:focus {
+  text-decoration: none !important;
+}
+.fa-angle-up {
+  margin-top: 10px;
+  font-size: 50px;
+  transition: all 0.5s;
+
+  position: relative;
+}
 .work-wrapper {
   margin: 0 auto;
   padding: 0px 0px 5px;
 }
 @media screen and (max-width: 600px) {
   .portfolio-img {
-    width: 225;
-    height: 106;
+    width: 325;
+    height: 153;
     border-radius: 10px;
     margin-left: 0;
   }
   .portfolio-overlay {
     position: absolute; /* Sit on top of the page content */
     display: block; /* Hidden by default */
-    width: 225; /* Full width (cover the whole page) */
-    height: 106; /* Full height (cover the whole page) */
+    width: 325; /* Full width (cover the whole page) */
+    height: 153; /* Full height (cover the whole page) */
     background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
@@ -476,18 +517,18 @@ a:hover {
   .work-info {
     position: absolute; /* Sit on top of the page content */
     display: none; /* Hidden by default */
-    width: 225; /* Full width (cover the whole page) */
-    height: 16.64; /* Full height (cover the whole page) */
-    background-color: rgba(36, 11, 128); /* Black background with opacity */
+    width: 325.2; /* Full width (cover the whole page) */
+    height: 23.28; /* Full height (cover the whole page) */
+    background-color: hotpink; /* Black background with opacity */
     color: white;
     z-index: 10; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer;
   }
   .links {
-    padding: 40 80;
+    padding: 60 80;
   }
   .work-info-title {
-    font-size: 12px;
+    font-size: 14px;
   }
   .modal-img {
     width: 292;
@@ -502,30 +543,227 @@ a:hover {
     margin-left: 0px;
   }
 }
+
+@media screen and (max-width: 398px) {
+  .portfolio-img {
+    width: 280;
+    height: 131;
+    border-radius: 10px;
+    margin-left: 0;
+  }
+  .portfolio-overlay {
+    position: absolute; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 280; /* Full width (cover the whole page) */
+    height: 131; /* Full height (cover the whole page) */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    border-radius: 10px;
+  }
+
+  .work-info {
+    position: absolute; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 280.1; /* Full width (cover the whole page) */
+    height: 23.28; /* Full height (cover the whole page) */
+    background-color: hotpink; /* Black background with opacity */
+    color: white;
+    z-index: 10; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+  }
+  .links {
+    padding: 50 80;
+  }
+}
+@media screen and (max-width: 330px) {
+  .portfolio-img {
+    width: 280;
+    height: 131;
+    border-radius: 10px;
+    margin-left: -15;
+  }
+  .portfolio-overlay {
+    position: absolute; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 280; /* Full width (cover the whole page) */
+    height: 131; /* Full height (cover the whole page) */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    border-radius: 10px;
+    margin-left: -15;
+  }
+
+  .work-info {
+    position: absolute; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 280px; /* Full width (cover the whole page) */
+    height: 23.28; /* Full height (cover the whole page) */
+    background-color: hotpink; /* Black background with opacity */
+    color: white;
+    z-index: 10; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 319px) {
+  .portfolio-img {
+    width: 260;
+    height: 120;
+    border-radius: 10px;
+    margin-left: -25;
+  }
+  .portfolio-overlay {
+    position: absolute; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 260; /* Full width (cover the whole page) */
+    height: 120.1; /* Full height (cover the whole page) */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    border-radius: 10px;
+    margin-left: -25;
+  }
+
+  .work-info {
+    position: absolute; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 260px; /* Full width (cover the whole page) */
+    height: 21.28; /* Full height (cover the whole page) */
+    background-color: hotpink; /* Black background with opacity */
+    color: white;
+    z-index: 10; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+  }
+  .links {
+    padding: 45 80;
+  }
+}
 .fa-bars {
   color: #fff;
 }
+
+.intro-content {
+  padding: 340.1px 0px 86px;
+}
+
 @media screen and (max-width: 1000px) {
   .intro-content {
-    padding: 25% 0 5% 0;
+    padding: 34% 0 5% 0;
   }
 }
 
 @media screen and (max-width: 768px) {
   .intro-content {
-    padding: 30% 0 5% 0;
+    padding: 40% 0 5% 0;
   }
   .navbar-toggler {
     padding: 0px 10px;
   }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 600px) {
   .intro-content {
     padding: 45% 0 5% 0;
   }
   a.fa.fa-angle-down {
     margin-top: 80px !important;
+  }
+}
+@media screen and (max-width: 572px) {
+  .intro-content {
+    padding: 50% 0 5% 0;
+  }
+  a.fa.fa-angle-down {
+    margin-top: 80px !important;
+  }
+}
+@media screen and (max-width: 540px) {
+  .intro-content {
+    padding: 55% 0 5% 0;
+  }
+  .title {
+    font-size: 50px !important;
+  }
+  .subtitle {
+    font-size: 16px;
+  }
+  .emailIcon {
+    font-size: 40px;
+    color: black;
+  }
+}
+@media screen and (max-width: 479px) {
+  .intro-content {
+    padding: 65% 0 5% 0;
+  }
+  .title {
+    font-size: 48px !important;
+  }
+  .subtitle {
+    font-size: 15.5px;
+  }
+  .fa-bars {
+    font-size: 30px !important;
+  }
+}
+@media screen and (max-width: 419px) {
+  .intro-content {
+    padding: 70% 0 5% 0;
+  }
+  .title {
+    font-size: 40px !important;
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+  .fa-bars {
+    font-size: 22px !important;
+  }
+  .navbar-brand {
+    padding: 4px 0px !important;
+    font-size: 14px !important;
+  }
+  p {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .box {
+    font-size: 12px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  .emailIcon {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 294px) {
+  .intro-content {
+    padding: 80% 0 5% 0;
+  }
+  .title {
+    font-size: 40px !important;
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+  .fa-bars {
+    font-size: 22px !important;
+  }
+  .navbar-brand {
+    padding: 4px 0px !important;
+    font-size: 13px !important;
+  }
+  .modalBtn {
+    margin-bottom: 20px !important;
+    padding: 4px;
+    font-size: 11px;
+  }
+  .modal-description {
+    font-size: 10px !important;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -576,3 +814,4 @@ a:hover {
     margin: 0;
   }
 }
+
