@@ -114,10 +114,38 @@ h2 {
 #intro {
   position: relative;
 }
+.aboutMeDescription {
+  padding-top: 60px;
+  color: white;
+}
+.aboutTitle {
+  color: white;
+}
 #about {
   height: 80vh;
   padding-top: 110px;
   margin-bottom: 60px;
+  background: #f172a1;
+  position: relative;
+  padding-bottom: 40rem;
+}
+#about::after,
+#about::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 150px;
+  background: #f172a1;
+  bottom: -1em;
+  z-index: 100;
+}
+#about::before {
+  right: 50%;
+  transform: skew(0, 20deg);
+}
+#about::after {
+  left: 50%;
+  transform: skew(0, -20deg);
 }
 #experience {
   padding: 60px 0px 60px;
@@ -150,7 +178,7 @@ h2 {
   margin: 0 10px 15px;
 }
 .otherSkills div div:hover {
-  border: 3px solid hotpink;
+  border: 3px solid white;
 }
 @media screen and (max-width: 576px) {
   .otherSkills {
@@ -158,15 +186,28 @@ h2 {
   }
   .box {
     height: 100 !important;
-    width: 120 !important;
-    font-size: 14px;
+    width: 100 !important;
+    font-size: 10px !important;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    border-color: rgb(230, 21, 125);
+    font-weight: 12px;
+    letter-spacing: 0.5px !important;
+    color: white;
+    background: hotpink;
   }
 }
 .skillsEffect {
   float: left;
   padding: 10px;
-  border: 1px solid hotpink;
+  border: 3px solid hotpink;
   margin: 0 10px 15px;
+  font-family: "Roboto Slab", serif !important;
+  letter-spacing: 1px;
+  background: rgb(248, 209, 215);
+  color: black;
 }
 .skillsEffect:hover {
   border: 3px solid hotpink;
@@ -177,8 +218,18 @@ h2 {
   align-items: center;
 }
 .box {
-  height: 120;
-  width: 140;
+  height: 120px;
+  width: 120px;
+  font-size: 13px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border-color: rgb(230, 21, 125);
+  font-weight: 14px;
+  letter-spacing: 1.5px;
+  color: white;
+  background: hotpink;
 }
 .aboutPara {
   margin: 0 auto;
@@ -740,9 +791,7 @@ a:hover {
   h2 {
     font-size: 28px;
   }
-  .box {
-    font-size: 12px;
-  }
+
   h5 {
     font-size: 16px;
   }
